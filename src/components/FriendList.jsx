@@ -1,0 +1,3 @@
+const Friendlist = ({friends}) => {
+    
+}

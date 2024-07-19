@@ -1,7 +1,8 @@
+import Friendlist from "./components/FriendList";
 import Profile from "./components/Profile";
+import userData from "./userdata.json";
+import friends from "./friends.json";
 
-import userData from "./userdata.json"
-  
 const App = () => {
   return (
     <>
@@ -12,6 +13,7 @@ const App = () => {
         image={userData.avatar}
         stats={userData.stats}
       />
+      <Friendlist friends={friends} />
     </>
   );
 };

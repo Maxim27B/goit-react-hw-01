@@ -1,7 +1,7 @@
-import Friendlist from "./components/FriendList";
-import Profile from "./components/Profile";
-import userData from "./userdata.json";
-import friends from "./friends.json";
+import Friendlist from './components/FriendList/FriendList';
+import Profile from './components/Profile/Profile';
+import userData from './userdata.json';
+import friends from './friends.json';
 
 const App = () => {
   return (
@@ -17,4 +17,4 @@ const App = () => {
     </>
   );
 };
-export default App
+export default App;

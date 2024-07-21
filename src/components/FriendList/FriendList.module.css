@@ -1,0 +1,12 @@
+.list {
+    display: flex;
+    gap: 12px;
+    margin: 20px;
+}
+
+.listItem {
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 12px;
+    text-align: center;
+}

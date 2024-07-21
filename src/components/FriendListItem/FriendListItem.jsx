@@ -1,9 +1,13 @@
+import css from './FriendListIten.module.css';
+
 const FriendListItem = ({ avatar, name, isOnline }) => {
   return (
-    <div>
+    <div className={css.container}>
       <img src={avatar} alt="Avatar" width="48" />
-      <p>{name}</p>
-      <p>{isOnline ? 'Online' : 'Offline'}</p>
+      <p className={css.name}>{name}</p>
+      <p className={isOnline ? css.online : css.offline}>
+        {isOnline ? 'Online' : 'Offline'}
+      </p>
     </div>
   );
 };

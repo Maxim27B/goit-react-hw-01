@@ -4,14 +4,10 @@ import css from './FriendList.module.css';
 const Friendlist = ({ friends }) => {
   return (
     <ul className={css.list}>
-      {friends.map(friend => {
+      {friends.map(({ id, avatar, name, isOnline }) => {
         return (
-          <li key={friend.id} className={css.listItem}>
-            <FriendListItem
-              avatar={friend.avatar}
-              name={friend.name}
-              isOnline={friend.isOnline}
-            />
+          <li key={id} className={css.listItem}>
+            <FriendListItem avatar={avatar} name={name} isOnline={isOnline} />
           </li>
         );
       })}

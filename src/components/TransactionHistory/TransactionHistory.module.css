@@ -1,0 +1,24 @@
+.table {
+    margin: 20px;
+    width: 420px;
+    border-spacing: 0;
+    border: 1px solid black;
+}
+
+.tableHeader {
+    background-color: rgb(33, 33, 33);
+    color: white;
+    width: 140px;
+    border: 1px solid black;
+    height: 32px;
+}
+
+.tableInfo {
+    text-align: center;
+    border: 1px solid black;
+    height: 32px;
+}
+
+.tableRow:nth-child(2n) {
+    background-color: lightgray;
+}
